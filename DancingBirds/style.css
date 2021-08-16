@@ -1,0 +1,237 @@
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #616971;
+}
+
+/* Navigation */
+
+.navbar {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+.navbar-brand img {
+  height: 3rem;
+}
+/*ADD ATTRIBUTION: <a href='https://pngtree.com/so/Origami'>Origami png from pngtree.com/</a>*/
+.heading {
+  display: inline-block;
+  vertical-align: middle;
+  color: white !important;
+}
+.navbar-nav li {
+  padding: 0.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #5c5cff !important;
+  padding-top: 0.8rem;
+}
+/* Landing */
+.home-inner {
+  background-image: url("/images/bg-img.jpg");
+}
+/* ATTRIBUTE: Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  */
+.bg-image img {
+  width: 100%;
+  height: 100%;
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+}
+
+/*-- Porjects section ---*/
+/*#projects {
+  margin-bottom: 0 !important;
+  padding: 2rem 0 2rem !important;
+  border-radius: 0 !important;
+}*/
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+h3.project-heading {
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 1.9rem !important;
+}
+.heading-underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #5c5cff;
+  margin: 0 auto 2rem;
+}
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-pad > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 3rem;
+}
+
+.card .btn-primary {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1rem;
+  color: white;
+  background-color: #5c5cff;
+  border-color: #5c5cff;
+}
+.card .btn-primary:hover {
+  background-color: #4949cc;
+  border-color: #4949cc;
+}*/
+
+h3.about {
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 1.9rem !important;
+}
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+footer img {
+  height: 3rem;
+}
+footer a {
+  color: white;
+}
+.fa {
+  font-size: 1.6rem;
+  margin: 1rem 0.5rem 0 0;
+}
+.fa:hover {
+  color: #5c5cff;
+}
+hr.socket {
+  width: 100%;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top {
+  backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}

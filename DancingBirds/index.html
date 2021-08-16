@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/cd68c64db5.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> 
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dancing Birds</title>
+  </head>
+
+  <body data-spy="scroll" data-bs-target="#navbarResponsive">
+    <!-- Home section -->
+    <div id="home">
+      <!-- Navigation -->
+      <nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+        <a href="index.html" class="navbar-brand"
+          ><img src="./images/dbc-logo.png" alt="dancing birds logo"
+        /></a>
+        <div class="heading">Dancing Bird Creations</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Landing page section -->
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
+        </div>
+      </div>
+
+      <div class="caption text-center">
+        <h1>Building professional websites</h1>
+        <h3>beautiful and responsive</h3>
+        <a class="btn btn-outline-light btn-lg" href="#contact"
+          >Find out more</a
+        >
+      </div>
+      <!-- End landing section -->
+    </div>
+    <!-- End home section -->
+
+    <!-- Projects Section-->
+    <div id="projects" class="offset">
+      <div class="bg-light">
+        
+          <div class="col-12">
+            <h3 class="text-center project-heading">Projects</h3>
+            <div class="heading-underline"></div>
+          </div>
+
+          <!-- Modal gallery -->
+  <section class="projects">
+  <!-- Section: Images -->
+  <section class="container">
+    <div class="row no-pad" id="gallery">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong"
+          data-ripple-color="light"
+        >
+          <img
+            src="images/rouge-oiseau.jpg"
+            class="image-fluid"
+          />
+          <!-- Photo by <a href="https://unsplash.com/@benlodge123?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Lodge</a> on <a href="https://unsplash.com/s/photos/screws?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   -->
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong"
+          data-ripple-color="light"
+        >
+          <img
+            src="images/be-calm.jpg"
+            class="image-fluid"
+          />
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong"
+          data-ripple-color="light"
+        >
+          <img
+            src="images/bg-img.jpg"
+            class="image-fluid"
+          />
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Images -->
+
+  <!-- Section: Modals -->
+  <section class="">
+    <!-- Modal 1 -->
+    <div
+    class="modal fade"
+    id="exampleModal1"
+    tabindex="-1"
+    aria-labelledby="exampleModal1Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/A3PDXmYoF5U"
+            title="YouTube video"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="text-center py-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div
+    class="modal fade"
+    id="exampleModal2"
+    tabindex="-1"
+    aria-labelledby="exampleModal2Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/wTcNtgA6gHs"
+            title="YouTube video"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="text-center py-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div
+    class="modal fade"
+    id="exampleModal3"
+    tabindex="-1"
+    aria-labelledby="exampleModal3Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/vlDzYIIOYmM"
+            title="YouTube video"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="text-center py-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+  <!-- Section: Modals -->
+</section>
+<!-- Modal gallery -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End projects section -->
+
+    <!-- About section -->
+    <div id="about" class="offset">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="content" height="100px">
+              <h3 class="about text-center">About</h3>
+              <div class="heading-underline"></div>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. <br />Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. <br />Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/dbc-logo.png"
+              class="image-responsive"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End about section-->
+
+    <!-- Contact section -->
+    <div id="contact" class="offset">
+      <footer>
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center">
+            <img src="images/dbc-logo.png" />
+            <p>...</p>
+            <strong>Contact</strong>
+            <p>email@dancingbirds.ie</p>
+            <a href="#" target="_blank"><i class="fa fa-github-square"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+          <hr class="socket" />
+          &copy; Dancing Birds.
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
